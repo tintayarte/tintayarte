@@ -1,32 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-   <!-- DATOS ESTRUCTURADOS JSON-LD PARA GOOGLE -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Curso Trimestral de Iniciación al Tattoo",
-  "description": "Curso presencial e intensivo de tatuaje en Buenos Aires. Máximo 6 alumnos por comisión.",
-  "provider": {
-    "@type": "EducationalOrganization",
-    "name": "Escuela de Tattoo Tinta y Arte",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Buenos Aires",
-      "addressRegion": "CABA",
-      "addressCountry": "AR"
-    }
-  },
-  "hasCourseInstance": {
-    "@type": "CourseInstance",
-    "courseMode": "Presencial",
-    "instructor": {
-      "@type": "Person",
-      "name": "Profesor José"
-    }
-  }
-}
-</script> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +9,7 @@
     <meta name="description" content="Aprende a tatuar en Buenos Aires con el Profesor José. Curso inicial de tatuaje presencial, personalizado y en grupos reducidos de máximo 6 alumnos.">
     <meta name="keywords" content="curso de tattoo, escuela de tatuaje, aprender a tatuar CABA, curso de tatuaje Buenos Aires, taller de tattoo, clase de tatuaje presencial">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://tinta-y-arte.com/"> <!-- Cambiar por tu URL final si aplica -->
+    <link rel="canonical" href="https://tinta-y-arte.com/">
 
     <!-- OPEN GRAPH (Vistas previas en WhatsApp y Redes Sociales) -->
     <meta property="og:type" content="website">
@@ -44,7 +17,35 @@
     <meta property="og:description" content="Formación práctico-teórica personalizada en grupos reducidos. ¡Iniciate en el mundo del tattoo!">
     <meta property="og:image" content="clase%20en%20tinta.png">
 
-    <!-- FUENTE DE LUJO (Google Fonts: Cinzel) -->
+    <!-- DATOS ESTRUCTURADOS JSON-LD PARA GOOGLE -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Curso Trimestral de Iniciación al Tattoo",
+      "description": "Curso presencial e intensivo de tatuaje en Buenos Aires. Máximo 6 alumnos por comisión.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Escuela de Tattoo Tinta y Arte",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "addressCountry": "AR"
+        }
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Presencial",
+        "instructor": {
+          "@type": "Person",
+          "name": "Profesor José"
+        }
+      }
+    }
+    </script> 
+
+    <!-- FUENTE GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -57,7 +58,6 @@
             box-sizing: border-box;
         }
 
-        /* ESTILOS DEL CUERPO Y PATRÓN DE FONDO */
         body {
             background-color: #0c0c0c;
             background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%3Cpath%20d%3D%22M%200%2060%20C%2020%2020%2C%2040%2020%2C%2060%2060%20C%2080%20100%2C%20100%20100%2C%20120%2060%22%20fill%3D%22none%22%20stroke%3D%22%232a2a2a%22%20stroke-width%3D%221.5%22/%3E%3Cpath%20d%3D%22M%2060%200%20C%2020%2020%2C%2020%2040%2C%2060%2060%20C%20100%2080%2C%20100%20100%2C%2060%20120%22%20fill%3D%22none%22%20stroke%3D%22%232a2a2a%22%20stroke-width%3D%221.5%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%233d3d3d%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M%2010%2C10%20C%2030%2C5%2045%2C20%2030%2C35%20C%2020%2C45%205%2C30%2020%2C15%20C%2028%2C7%2040%2C15%2035%2C25%22/%3E%3Ccircle%20cx%3D%2235%22%20cy%3D%2225%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3Cpath%20d%3D%22M%20110%2C10%20C%2090%2C5%2075%2C20%2090%2C35%20C%20100%2C45%20115%2C30%20100%2C15%20C%2092%2C7%2080%2C15%2085%2C25%22/%3E%3Ccircle%20cx%3D%2285%22%20cy%3D%2225%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3Cpath%20d%3D%22M%2010%2C110%20C%2030%2C115%2045%2C100%2030%2C85%20C%2020%2C75%205%2C90%2020%2C105%20C%2028%2C113%2040%2C105%2035%2C95%22/%3E%3Ccircle%20cx%3D%2235%22%20cy%3D%2295%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3Cpath%20d%3D%22M%20110%2C110%20C%2090%2C115%2075%2C100%2090%2C85%20C%20100%2C75%20115%2C90%20100%2C105%20C%2092%2C113%2080%2C105%2085%2C95%22/%3E%3Ccircle%20cx%3D%2285%22%20cy%3D%2295%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3C/g%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%234a4a4a%22%20stroke-width%3D%221.2%22%3E%3Cpath%20d%3D%22M%2060%2C40%20Q%2075%2C50%2060%2C60%20Q%2045%2C70%2060%2C80%20Q%2075%2C70%2060%2C60%20Q%2045%2C50%2060%2C40%20Z%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%223%22%20fill%3D%22%23666666%22/%3E%3C/g%3E%3C/svg%3E");
@@ -525,7 +525,7 @@
             text-decoration: none;
         }
 
-        /* DISEÑO RESPONSIVO PARA DISPOSITIVOS MÓVILES */
+        /* ADAPTACIÓN MÓVIL */
         @media (max-width: 880px) {
             .hero-content h1 {
                 font-size: 2.1rem;
