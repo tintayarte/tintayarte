@@ -2,161 +2,140 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Garantiza la adaptabilidad en pantallas móviles (Diseño Responsivo) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 1. TÍTULO SEO: Debe contener la palabra clave principal y el nombre del negocio (máx. 60 caracteres) -->
-    <title>Escuela de Tattoo Tinta y Arte | Cursos Profesionales de Tatuaje</title>
+    <!-- ==========================================
+         METADATOS DE INDEXACIÓN Y SEO (Google)
+         ========================================== -->
+    <!-- Título principal visible en la pestaña del navegador y resultados de búsqueda -->
+    <title>ESCUELA DE TATTOO TINTA Y ARTE | Cursos y Formación Profesional</title>
 
-    <!-- 2. DESCRIPCIÓN SEO: Texto breve que muestra Google en los resultados de búsqueda (máx. 155 caracteres) -->
-    <meta name="description" content="Aprende el arte del tatuaje con formación práctico-teórica personalizada en grupos reducidos. Inscríbete hoy en Escuela de Tattoo Tinta y Arte.">
+    <!-- Descripción breve que se muestra debajo del título en Google -->
+    <meta name="description" content="Formación práctico-teórica personalizada en grupos reducidos. Inscríbete a los cursos de la Escuela de Tattoo Tinta y Arte.">
 
-    <!-- 3. PALABRAS CLAVE: Términos relevantes para búsquedas web -->
-    <meta name="keywords" content="escuela de tattoo, curso de tatuaje, aprender a tatuar, taller de tattoo, tinta y arte, clases de tatuaje">
+    <!-- Palabras clave para los motores de búsqueda -->
+    <meta name="keywords" content="escuela de tattoo, tinta y arte, curso de tatuaje, aprender a tatuar, clases de tattoo">
 
-    <!-- 4. CONTROL DE INDEXACIÓN: Ordena a los motores de búsqueda indexar la página y seguir sus enlaces -->
+    <!-- Indicación expresa a los motores de búsqueda para indexar este sitio -->
     <meta name="robots" content="index, follow">
-
-    <!-- 5. URL CANÓNICA: Evita problemas de contenido duplicado definiendo la URL principal del sitio -->
     <link rel="canonical" href="https://escueladetattootintayarte.github.io/">
 
-    <!-- 6. ETIQUETAS OPEN GRAPH: Para visualización optimizada al compartir en WhatsApp y Redes Sociales -->
-    <meta property="og:title" content="Escuela de Tattoo Tinta y Arte | Cursos Profesionales">
-    <meta property="og:description" content="Formación práctico-teórica personalizada en grupos reducidos. ¡Súmate a nuestras comisiones!">
+    <!-- ==========================================
+         METADATOS OPEN GRAPH (Redes Sociales / WhatsApp)
+         ========================================== -->
+    <meta property="og:title" content="ESCUELA DE TATTOO TINTA Y ARTE">
+    <meta property="og:description" content="Formación práctico-teórica personalizada en grupos reducidos. Inscríbete a los cursos.">
     <meta property="og:url" content="https://escueladetattootintayarte.github.io/">
     <meta property="og:type" content="website">
 
-    <!-- ESTILOS BÁSICOS CSS PARA PRESENTACIÓN Y DISEÑO RESPONSIVO -->
+    <!-- ==========================================
+         ESTILOS Y DISEÑO VISUAL (CSS)
+         ========================================== -->
     <style>
-        :root {
-            --primary-color: #111111;
-            --accent-color: #d4af37; /* Dorado / Accent */
-            --text-color: #333333;
-            --bg-light: #f8f9fa;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            color: var(--text-color);
-            background-color: var(--bg-light);
-            line-height: 1.6;
+            text-align: center;
         }
 
         header {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 2rem;
+            background-color: #1e1e1e;
+            border-bottom: 2px solid #d4af37;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            color: var(--accent-color);
+        h1 {
+            color: #d4af37;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
 
-        header p {
-            margin-top: 0.5rem;
-            font-size: 1.1rem;
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
         }
 
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 2rem 0;
         }
 
-        .card {
-            background: #ffffff;
-            padding: 1.5rem;
+        .galeria img {
+            width: 100%;
+            max-width: 280px;
+            height: 200px;
+            object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 1.5rem;
+            border: 1px solid #333;
         }
 
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.3rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        .btn-whatsapp {
+        .btn-contacto {
             display: inline-block;
             background-color: #25d366;
-            color: #ffffff;
+            color: white;
+            padding: 12px 24px;
             text-decoration: none;
-            padding: 0.8rem 1.5rem;
             font-weight: bold;
             border-radius: 5px;
-            text-align: center;
+            font-size: 1.1rem;
             margin-top: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-whatsapp:hover {
-            background-color: #128c7e;
         }
 
         footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: var(--primary-color);
-            color: #ffffff;
+            background-color: #1e1e1e;
+            padding: 1rem;
             margin-top: 2rem;
             font-size: 0.9rem;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
-    <!-- ENCABEZADO PRINCIPAL (HEADER) -->
+    <!-- ENCABEZADO DE LA PÁGINA -->
     <header>
-        <h1>Escuela de Tattoo Tinta y Arte</h1>
-        <p>Formación Profesional Práctico-Teórica en Tatuaje</p>
+        <h1>ESCUELA DE TATTOO TINTA Y ARTE</h1>
+        <p>Formación práctico-teórica personalizada en grupos reducidos</p>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL (MAIN) -->
-    <main>
-
-        <!-- SECCIÓN DE PRESENTACIÓN -->
-        <section class="card">
-            <h2>Aprende el Arte del Tatuaje</h2>
-            <p>
-                Ofrecemos capacitaciones personalizadas diseñadas para llevarte desde los conocimientos básicos de bioseguridad y calibración de máquinas hasta técnicas avanzadas de delineado, sombreado y color.
-            </p>
+    <!-- CONTENIDO PRINCIPAL Y SECCIONES -->
+    <main class="container">
+        
+        <section>
+            <h2>Nuestros Cursos y Talleres</h2>
+            <p>Aprende desde las bases de la bioseguridad hasta las técnicas avanzadas de líneas, sombras y color con instructores capacitados.</p>
         </section>
 
-        <!-- SECCIÓN DE CARACTERÍSTICAS DEL CURSO -->
-        <section class="card">
-            <h2>¿Qué incluye la formación?</h2>
-            <ul>
-                <li>Grupos reducidos con atención personalizada.</li>
-                <li>Módulos teóricos de higiene, bioseguridad y anatomía de la piel.</li>
-                <li>Prácticas guiadas sobre piel sintética y modelos reales.</li>
-                <li>Asesoramiento en la compra de insumos y equipamiento profesional.</li>
-            </ul>
+        <!-- GALERÍA DE IMÁGENES -->
+        <section>
+            <h2>Galería de Trabajos</h2>
+            <div class="galeria">
+                <!-- Asegúrate de sustituir los nombres de las imágenes por los de tu repositorio -->
+                <img src="foto1.jpg" alt="Prácticas de tatuaje en la escuela">
+                <img src="foto2.jpg" alt="Diseños de arte y flash tattoo">
+                <img src="foto3.jpg" alt="Equipamiento e insumos de tatuaje">
+            </div>
         </section>
 
-        <!-- SECCIÓN DE CONTACTO -->
-        <section class="card" style="text-align: center;">
-            <h2>Inscripciones Abiertas</h2>
-            <p>Consulta por días, horarios y aranceles directamente con un instructor.</p>
-            
-            <!-- Botón de contacto directo por WhatsApp -->
-            <a class="btn-whatsapp" href="https://wa.me/?text=Hola,%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20cursos%20de%20Escuela%20de%20Tattoo" target="_blank" rel="noopener noreferrer">
-                Contactar por WhatsApp
+        <!-- SECCIÓN DE INSCRIPCIÓN / WHATSAPP -->
+        <section>
+            <h2>¿Quieres más información?</h2>
+            <p>Contáctanos directamente para conocer días, horarios y formas de pago.</p>
+            <a href="https://wa.me/?text=Hola,%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20cursos%20de%20Escuela%20de%20Tattoo" class="btn-contacto" target="_blank" rel="noopener noreferrer">
+                Inscribirme por WhatsApp
             </a>
         </section>
 
     </main>
 
-    <!-- PIE DE PÁGINA (FOOTER) -->
+    <!-- PIE DE PÁGINA -->
     <footer>
         <p>&copy; 2026 Escuela de Tattoo Tinta y Arte. Todos los derechos reservados.</p>
     </footer>
