@@ -18,32 +18,27 @@
             box-sizing: border-box;
         }
 
-        /* FUENTES GENERALES Y PATRÓN SVG DE FILETIADO EN EMBEDDED DATA-URI */
+        /* FUENTES GENERALES Y PATRÓN DE FONDO */
         body {
-            /* 1. Color negro base de fondo */
             background-color: #0c0c0c;
-            
-            /* 2. Firuletes de fileteado porteño integrados directamente en código SVG */
             background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%3Cpath%20d%3D%22M%200%2060%20C%2020%2020%2C%2040%2020%2C%2060%2060%20C%2080%20100%2C%20100%20100%2C%20120%2060%22%20fill%3D%22none%22%20stroke%3D%22%232a2a2a%22%20stroke-width%3D%221.5%22/%3E%3Cpath%20d%3D%22M%2060%200%20C%2020%2020%2C%2020%2040%2C%2060%2060%20C%20100%2080%2C%20100%20100%2C%2060%20120%22%20fill%3D%22none%22%20stroke%3D%22%232a2a2a%22%20stroke-width%3D%221.5%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%233d3d3d%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M%2010%2C10%20C%2030%2C5%2045%2C20%2030%2C35%20C%2020%2C45%205%2C30%2020%2C15%20C%2028%2C7%2040%2C15%2035%2C25%22/%3E%3Ccircle%20cx%3D%2235%22%20cy%3D%2225%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3Cpath%20d%3D%22M%20110%2C10%20C%2090%2C5%2075%2C20%2090%2C35%20C%20100%2C45%20115%2C30%20100%2C15%20C%2092%2C7%2080%2C15%2085%2C25%22/%3E%3Ccircle%20cx%3D%2285%22%20cy%3D%2225%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3Cpath%20d%3D%22M%2010%2C110%20C%2030%2C115%2045%2C100%2030%2C85%20C%2020%2C75%205%2C90%2020%2C105%20C%2028%2C113%2040%2C105%2035%2C95%22/%3E%3Ccircle%20cx%3D%2235%22%20cy%3D%2295%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3Cpath%20d%3D%22M%20110%2C110%20C%2090%2C115%2075%2C100%2090%2C85%20C%20100%2C75%20115%2C90%20100%2C105%20C%2092%2C113%2080%2C105%2085%2C95%22/%3E%3Ccircle%20cx%3D%2285%22%20cy%3D%2295%22%20r%3D%222%22%20fill%3D%22%23555555%22/%3E%3C/g%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%234a4a4a%22%20stroke-width%3D%221.2%22%3E%3Cpath%20d%3D%22M%2060%2C40%20Q%2075%2C50%2060%2C60%20Q%2045%2C70%2060%2C80%20Q%2075%2C70%2060%2C60%20Q%2045%2C50%2060%2C40%20Z%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%223%22%20fill%3D%22%23666666%22/%3E%3C/g%3E%3C/svg%3E");
             background-repeat: repeat;
             background-position: center top;
             background-attachment: fixed;
-
             color: #e0e0e0;
             font-family: 'Times New Roman', Times, serif;
             line-height: 1.6;
             font-size: 1.05rem;
         }
 
-        /* TIPOGRAFÍA LUXURY PARA TÍTULOS */
         h1, h2, h3, h4 {
-            font-family: 'Luxury', 'Cinzel', 'Playfair Display', Georgia, serif;
+            font-family: 'Cinzel', Georgia, serif;
             letter-spacing: 2px;
             font-weight: 700;
             text-transform: uppercase;
         }
 
-        /* ENCABEZADO Y NAVEGACIÓN */
+        /* NAVEGACIÓN */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -92,7 +87,6 @@
             color: #d4af37;
         }
 
-        /* BOTÓN MENÚ HAMBURGUESA */
         .menu-toggle {
             display: none;
             flex-direction: column;
@@ -106,10 +100,9 @@
             height: 3px;
             background-color: #d4af37;
             border-radius: 2px;
-            transition: all 0.3s ease;
         }
 
-        /* PORTADA (HERO) */
+        /* PORTADA */
         .hero {
             position: relative;
             background: linear-gradient(135deg, rgba(12,12,12,0.92) 0%, rgba(20,0,0,0.85) 100%), 
@@ -134,8 +127,6 @@
             margin-bottom: 0.8rem;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-            overflow-wrap: break-word;
-            word-wrap: break-word;
         }
 
         .hero-content p {
@@ -144,7 +135,6 @@
             color: #cccccc;
         }
 
-        /* BOTONES */
         .btn-primary {
             display: inline-block;
             padding: 0.8rem 1.8rem;
@@ -153,12 +143,11 @@
             font-weight: bold;
             cursor: pointer;
             border: 1px solid #d4af37;
-            transition: all 0.3s ease;
-            text-align: center;
             background-color: #d4af37;
             color: #0c0c0c;
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.05rem;
+            transition: all 0.3s ease;
         }
 
         .btn-primary:hover {
@@ -166,7 +155,6 @@
             color: #ffffff;
         }
 
-        /* BOTÓN DE WHATSAPP */
         .btn-whatsapp {
             display: inline-flex;
             align-items: center;
@@ -182,20 +170,16 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
         }
 
         .btn-whatsapp:hover {
             background-color: #1eb757;
-            color: #ffffff;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
         }
 
         .btn-block {
             width: 100%;
         }
 
-        /* SECCIONES CON CAPA OSCURA PARA LEGIBILIDAD */
         .section {
             padding: 4rem 1.5rem;
             max-width: 950px;
@@ -220,11 +204,9 @@
             text-align: center;
             margin-bottom: 2rem;
             color: #aaaaaa;
-            font-family: 'Times New Roman', Times, serif;
             font-style: italic;
         }
 
-        /* BIO PROFESOR */
         .bio-container {
             display: flex;
             flex-direction: column;
@@ -248,7 +230,6 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #d4af37;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
         }
 
         .bio-text {
@@ -269,7 +250,6 @@
             margin-top: 0.5rem;
         }
 
-        /* TARJETAS Y ESTRUCTURA */
         .card {
             background-color: #161616;
             border: 1px solid #2a2a2a;
@@ -315,10 +295,8 @@
             margin: 1.8rem 0 1.2rem 0;
             text-align: center;
             color: #f0c430;
-            font-family: 'Times New Roman', Times, serif;
             font-size: 1.15rem;
             font-weight: 600;
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
         }
 
         .course-modules {
@@ -362,7 +340,6 @@
             margin-bottom: 0.6rem;
         }
 
-        /* GALERÍA DE IMÁGENES */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -385,7 +362,6 @@
             display: block;
         }
 
-        /* TARJETAS DE TESTIMONIOS */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -408,7 +384,6 @@
             font-size: 0.98rem;
             color: #cccccc;
             font-style: italic;
-            line-height: 1.5;
         }
 
         .testimonial-card .author {
@@ -417,10 +392,8 @@
             color: #d4af37;
             font-weight: bold;
             font-style: normal;
-            font-size: 0.95rem;
         }
 
-        /* UBICACIÓN */
         .location-card {
             background-color: #161616;
             border: 1px solid #d4af37;
@@ -435,7 +408,6 @@
             border-radius: 4px;
             overflow: hidden;
             border: 1px solid #d4af37;
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
         }
 
         .map-container iframe {
@@ -465,7 +437,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* FORMULARIO DE CONTACTO */
         .contact-form {
             background-color: #161616;
             padding: 2rem;
@@ -508,7 +479,6 @@
             text-decoration: none;
         }
 
-        /* RESPONSIVO */
         @media (max-width: 880px) {
             .hero-content h2 {
                 font-size: 2.1rem;
@@ -521,14 +491,13 @@
             .nav-links {
                 display: none;
                 flex-direction: column;
-                position.absolute;
+                position: absolute;
                 top: 100%;
                 left: 0;
                 width: 100%;
                 background-color: #141414;
                 padding: 1.5rem 0;
                 border-bottom: 2px solid #d4af37;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
             }
 
             .nav-links.active {
@@ -538,12 +507,6 @@
             .nav-links li {
                 text-align: center;
                 padding: 0.8rem 0;
-                width: 100%;
-            }
-
-            .nav-links a {
-                font-size: 1.2rem;
-                display: block;
             }
         }
     </style>
@@ -713,7 +676,7 @@
             </div>
             
             <div class="gallery-card">
-                <img src="estaciondebio.png" alt="Ambiente de trabajo equipado y estación de bioseguridad">
+                <img src="estacióndebio.png" alt="Ambiente de trabajo equipado y estación de bioseguridad">
                 <p style="text-align: center; font-weight: bold; color: #d4af37; font-style: normal; padding: 0.8rem;">Ambiente de trabajo equipado y estación de bioseguridad</p>
             </div>
         </div>
